@@ -12,6 +12,10 @@
 		7FDD39CC1E22BB1F00CEC609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDD39CA1E22BB1F00CEC609 /* Main.storyboard */; };
 		7FDD39CE1E22BB1F00CEC609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FDD39CD1E22BB1F00CEC609 /* Assets.xcassets */; };
 		7FDD39D11E22BB1F00CEC609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDD39CF1E22BB1F00CEC609 /* LaunchScreen.storyboard */; };
+		7FDD39DB1E22BD2700CEC609 /* bird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDD39D81E22BD2700CEC609 /* bird.jpg */; };
+		7FDD39DC1E22BD2700CEC609 /* dog.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDD39D91E22BD2700CEC609 /* dog.jpeg */; };
+		7FDD39DD1E22BD2700CEC609 /* cat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDD39DA1E22BD2700CEC609 /* cat.jpeg */; };
+		7FDD39DF1E22C09B00CEC609 /* ZoomUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDD39DE1E22C09B00CEC609 /* ZoomUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		7FDD39CD1E22BB1F00CEC609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FDD39D01E22BB1F00CEC609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FDD39D21E22BB1F00CEC609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FDD39D81E22BD2700CEC609 /* bird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bird.jpg; sourceTree = "<group>"; };
+		7FDD39D91E22BD2700CEC609 /* dog.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpeg; sourceTree = "<group>"; };
+		7FDD39DA1E22BD2700CEC609 /* cat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpeg; sourceTree = "<group>"; };
+		7FDD39DE1E22C09B00CEC609 /* ZoomUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +62,13 @@
 		7FDD39C51E22BB1F00CEC609 /* SlideshowApp */ = {
 			isa = PBXGroup;
 			children = (
+				7FDD39D81E22BD2700CEC609 /* bird.jpg */,
+				7FDD39D91E22BD2700CEC609 /* dog.jpeg */,
+				7FDD39DA1E22BD2700CEC609 /* cat.jpeg */,
 				7FDD39C61E22BB1F00CEC609 /* AppDelegate.swift */,
 				7FDD39C81E22BB1F00CEC609 /* ViewController.swift */,
 				7FDD39CA1E22BB1F00CEC609 /* Main.storyboard */,
+				7FDD39DE1E22C09B00CEC609 /* ZoomUpViewController.swift */,
 				7FDD39CD1E22BB1F00CEC609 /* Assets.xcassets */,
 				7FDD39CF1E22BB1F00CEC609 /* LaunchScreen.storyboard */,
 				7FDD39D21E22BB1F00CEC609 /* Info.plist */,
@@ -96,6 +108,7 @@
 				TargetAttributes = {
 					7FDD39C21E22BB1F00CEC609 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JUQFE9MFEK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,6 +136,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDD39DC1E22BD2700CEC609 /* dog.jpeg in Resources */,
+				7FDD39DB1E22BD2700CEC609 /* bird.jpg in Resources */,
+				7FDD39DD1E22BD2700CEC609 /* cat.jpeg in Resources */,
 				7FDD39D11E22BB1F00CEC609 /* LaunchScreen.storyboard in Resources */,
 				7FDD39CE1E22BB1F00CEC609 /* Assets.xcassets in Resources */,
 				7FDD39CC1E22BB1F00CEC609 /* Main.storyboard in Resources */,
@@ -136,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDD39DF1E22C09B00CEC609 /* ZoomUpViewController.swift in Sources */,
 				7FDD39C91E22BB1F00CEC609 /* ViewController.swift in Sources */,
 				7FDD39C71E22BB1F00CEC609 /* AppDelegate.swift in Sources */,
 			);
@@ -260,11 +277,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JUQFE9MFEK;
 				INFOPLIST_FILE = SlideshowApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.atsushi.suzuki.SlideshowApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -272,11 +292,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JUQFE9MFEK;
 				INFOPLIST_FILE = SlideshowApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.atsushi.suzuki.SlideshowApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -299,6 +322,7 @@
 				7FDD39D71E22BB1F00CEC609 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
